@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaFacebook, FaEnvelope, FaHeart } from 'react-icons/fa';
 import { portfolioData } from '../data/portfolioData';
 
 const Footer = () => {
@@ -9,6 +9,7 @@ const Footer = () => {
     { icon: FaGithub, href: portfolioData.contact.github, label: 'GitHub' },
     { icon: FaLinkedin, href: portfolioData.contact.linkedin, label: 'LinkedIn' },
     { icon: FaTwitter, href: portfolioData.contact.twitter, label: 'Twitter' },
+    { icon: FaFacebook, href: portfolioData.contact.facebook, label: 'Facebook' },
     { icon: FaEnvelope, href: `mailto:${portfolioData.contact.email}`, label: 'Email' }
   ];
 
@@ -41,12 +42,12 @@ const Footer = () => {
           >
             <div className="mb-4">
               <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                John Developer
+                Felix Kumafutsa
               </span>
             </div>
             <p className="text-gray-400 mb-4">
-              Passionate about building innovative solutions that bridge the physical and digital worlds 
-              through IoT, AI, and blockchain technologies.
+              Full-Stack Software Developer with expertise in building scalable web applications, 
+              IoT solutions, and AI-driven systems. Passionate about creating innovative digital solutions.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -131,7 +132,7 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} John Developer. All rights reserved.
+              © {currentYear} Felix Kumafutsa. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm flex items-center">
               Made with <FaHeart className="w-4 h-4 text-red-500 mx-1" /> using React & Tailwind CSS

@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter, FaMapMarkerAlt, FaPhone, FaFacebook } from 'react-icons/fa';
 import { portfolioData } from '../data/portfolioData';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,16 +24,32 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setSubmitStatus('Thank you for your message! I\'ll get back to you soon.');
+    setSubmitStatus('');
+
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_email: portfolioData.contact.email
+      };
+
+      // Using EmailJS to send the email
+      await emailjs.send(
+        'service_portfolio', // You'll need to set this up
+        'template_contact', // You'll need to set this up
+        templateParams,
+        'YOUR_PUBLIC_KEY' // You'll need to set this up
+      );
+
+      setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      setSubmitStatus('error');
+    } finally {
       setIsSubmitting(false);
-      
-      // Clear status after 5 seconds
-      setTimeout(() => setSubmitStatus(''), 5000);
-    }, 1000);
+    }
   };
 
   const contactInfo = [
@@ -43,22 +60,40 @@ const Contact = () => {
       href: `mailto:${portfolioData.contact.email}`
     },
     {
+      icon: FaPhone,
+      label: 'Phone',
+      value: portfolioData.contact.phone,
+      href: `tel:${portfolioData.contact.phone}`
+    },
+    {
       icon: FaMapMarkerAlt,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: portfolioData.contact.address,
       href: '#'
     },
     {
       icon: FaGithub,
       label: 'GitHub',
-      value: 'github.com/username',
+      value: 'github.com/felixkumafutsa',
       href: portfolioData.contact.github
     },
     {
       icon: FaLinkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/username',
+      value: 'linkedin.com/in/felixkumafutsa',
       href: portfolioData.contact.linkedin
+    },
+    {
+      icon: FaTwitter,
+      label: 'X (Twitter)',
+      value: 'x.com/kumafutsa',
+      href: portfolioData.contact.twitter
+    },
+    {
+      icon: FaFacebook,
+      label: 'Facebook',
+      value: 'facebook.com/felix.kumafutsa.9',
+      href: portfolioData.contact.facebook
     }
   ];
 
@@ -93,13 +128,23 @@ const Contact = () => {
             <div className="bg-glass-gradient backdrop-blur-3xl border border-white/20 rounded-2xl p-8 shadow-glass">
               <h3 className="text-2xl font-semibold mb-6 text-white">Send a Message</h3>
               
-              {submitStatus && (
+              {submitStatus === 'success' && (
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="mb-4 p-4 bg-green-500/20 border border-green-500/50 rounded-lg text-green-400"
+                  className="mb-4 p-4 bg-green-500/20 border border-green-500/50 rounded-lg text-green-300 text-center"
                 >
-                  {submitStatus}
+                  Message sent successfully! I'll get back to you soon.
+                </motion.div>
+              )}
+              
+              {submitStatus === 'error' && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mb-4 p-4 bg-red-500/20 border border-red-500/50 rounded-lg text-red-300 text-center"
+                >
+                  Failed to send message. Please try again or email me directly.
                 </motion.div>
               )}
 

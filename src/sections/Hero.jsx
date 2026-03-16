@@ -3,10 +3,10 @@ import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaArrowDown } from 'react-
 
 const Hero = () => {
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com/username', label: 'GitHub' },
+    { icon: FaGithub, href: 'https://github.com/felixkumafutsa', label: 'GitHub' },
     { icon: FaLinkedin, href: 'https://linkedin.com/in/username', label: 'LinkedIn' },
     { icon: FaTwitter, href: 'https://twitter.com/username', label: 'Twitter' },
-    { icon: FaEnvelope, href: 'mailto:john.developer@example.com', label: 'Email' }
+    { icon: FaEnvelope, href: 'mailto:felixkumafutsa@gmail.com', label: 'Email' }
   ];
 
   const scrollToSection = (sectionId) => {
@@ -62,7 +62,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent"
           >
-            John Developer
+            Felix Kumafutsa
           </motion.h1>
 
           <motion.h2
@@ -71,7 +71,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-300 mb-4 font-light"
           >
-            IoT Engineer | AI Developer | Full Stack Engineer
+            Full Stack Software Developer | IoT Engineer | AI Developer | Data Scientist
           </motion.h2>
 
           <motion.p
