@@ -44,11 +44,11 @@
   ],
   "rewrites": [
     {
-      "source": "/portfolio-website/((?!api/).*)",
+      "source": "/portfolio-website/(.*)",
       "destination": "/portfolio-website/index.html"
     },
     {
-      "source": "/((?!portfolio-website|api/).*)",
+      "source": "/(.*)",
       "destination": "/portfolio-website/index.html"
     }
   ]
