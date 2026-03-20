@@ -27,7 +27,7 @@ export const portfolioData = {
       { name: "Authentication", icon: "shield", level: 80 }
     ],
     databases: [
-      { name: "PostgreSQL", icon: "database", level: 90 },
+      { name: "PostgreSQL", icon: "database", level: 60 },
       { name: "MySQL", icon: "database", level: 85 },
       { name: "SQLite", icon: "database", level: 80 },
       { name: "SQL", icon: "database", level: 90 },
