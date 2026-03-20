@@ -1,13 +1,13 @@
 {
-  "buildCommand": "cd portfolio-website && npm run build",
-  "outputDirectory": "portfolio-website/dist",
-  "devCommand": "cd portfolio-website && npm run dev",
-  "installCommand": "cd portfolio-website && npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
   "framework": "vite",
   "rootDirectory": "portfolio-website",
   "headers": [
     {
-      "source": "/portfolio-website/assets/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2)$",
+      "source": "/assets/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2)$",
       "headers": [
         {
           "key": "Cache-Control",
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "source": "/portfolio-website/assets/(.*\\.js)$",
+      "source": "/assets/(.*\\.js)$",
       "headers": [
         {
           "key": "Content-Type",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "source": "/portfolio-website/assets/(.*\\.css)$",
+      "source": "/assets/(.*\\.css)$",
       "headers": [
         {
           "key": "Content-Type",
