@@ -113,7 +113,7 @@ const Footer = () => {
                 </a>
               </p>
               <p className="text-gray-400">
-                Location: San Francisco, CA
+                Location: {portfolioData.contact.address}
               </p>
               <p className="text-gray-400">
                 Available for freelance and full-time opportunities

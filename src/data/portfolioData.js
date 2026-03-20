@@ -58,7 +58,7 @@ export const portfolioData = {
       technologies: ["ESP32", "RFID", "Node.js", "MariaDB", "REST API"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/images/projects/medcard.png?v=1"
+      image: "/portfolio-website/images/projects/medcard.png"
     },
     {
       id: 3,
@@ -67,7 +67,7 @@ export const portfolioData = {
       technologies: ["React", "Node.js", "PostgreSQL", "Docker", "JWT", "PDF Generation"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/images/projects/auditsoft.png"
+      image: "/portfolio-website/images/projects/auditsoft.png"
     },
     {
       id: 4,
