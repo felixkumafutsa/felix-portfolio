@@ -29,6 +29,7 @@ export const portfolioData = {
     databases: [
       { name: "PostgreSQL", icon: "database", level: 90 },
       { name: "MySQL", icon: "database", level: 85 },
+      { name: "SQLite", icon: "database", level: 80 },
       { name: "SQL", icon: "database", level: 90 },
       { name: "MongoDB", icon: "devicon-mongodb-plain", level: 70 }
     ],
