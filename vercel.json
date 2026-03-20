@@ -6,16 +6,25 @@
   "framework": "vite",
   "headers": [
     {
-      "source": "/assets/(.*)",
+      "source": "/portfolio-website/assets/(.*\\.js)",
       "headers": [
         {
           "key": "Content-Type",
-          "value": "application/javascript"
+          "value": "application/javascript; charset=utf-8"
         }
       ]
     },
     {
-      "source": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2)$",
+      "source": "/portfolio-website/assets/(.*\\.css)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/css; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/portfolio-website/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2)$)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -26,8 +35,12 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!api/).*)",
-      "destination": "/index.html"
+      "source": "/portfolio-website/((?!api/).*)",
+      "destination": "/portfolio-website/index.html"
+    },
+    {
+      "source": "/((?!portfolio-website|api/).*)",
+      "destination": "/portfolio-website/index.html"
     }
   ]
 }

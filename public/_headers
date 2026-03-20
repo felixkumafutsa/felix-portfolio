@@ -1,12 +1,12 @@
-/assets/*
+/portfolio-website/assets/*
   Content-Type: application/javascript
   Cache-Control: public, max-age=31536000, immutable
 
-/assets/*.js
+/portfolio-website/assets/*.js
   Content-Type: application/javascript; charset=utf-8
   Cache-Control: public, max-age=31536000, immutable
 
-/assets/*.css
+/portfolio-website/assets/*.css
   Content-Type: text/css
   Cache-Control: public, max-age=31536000, immutable
 
