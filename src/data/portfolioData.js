@@ -107,6 +107,33 @@ export const portfolioData = {
     },
     {
       id: 8,
+      title: "Solar Power Plant Monitoring System",
+      description: "Comprehensive IoT-based monitoring system for solar power plants with real-time energy production tracking, performance analytics, and predictive maintenance alerts.",
+      technologies: ["ESP32", "Solar Sensors", "React", "Node.js", "MQTT", "InfluxDB", "Grafana", "WebSocket"],
+      github: "https://github.com/felixkumafutsa",
+      demo: "https://felixkumafutsa.github.io",
+      image: "/api/placeholder/600/400"
+    },
+    {
+      id: 9,
+      title: "IoT SmartBin System",
+      description: "Intelligent waste management system with ultrasonic sensors for fill-level detection, automated collection scheduling, and real-time dashboard for municipal authorities.",
+      technologies: ["ESP32", "Ultrasonic Sensors", "LoRaWAN", "React", "MongoDB", "GPS", "SMS Gateway"],
+      github: "https://github.com/felixkumafutsa",
+      demo: "https://felixkumafutsa.github.io",
+      image: "/api/placeholder/600/400"
+    },
+    {
+      id: 10,
+      title: "IoT Monitoring Gateway",
+      description: "Universal IoT gateway platform enabling users to connect and monitor various IoT devices through a centralized dashboard with real-time data visualization and alert management.",
+      technologies: ["Raspberry Pi", "MQTT Broker", "React", "Node.js", "WebSocket", "PostgreSQL", "Docker", "REST API"],
+      github: "https://github.com/felixkumafutsa",
+      demo: "https://felixkumafutsa.github.io",
+      image: "/api/placeholder/600/400"
+    },
+    {
+      id: 11,
       title: "Fingerprint Attendance System",
       description: "Biometric attendance system with fingerprint recognition, real-time tracking, and analytics dashboard.",
       technologies: ["ESP32", "R503 Sensor", "REST API", "MongoDB", "React"],
