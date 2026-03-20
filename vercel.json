@@ -4,7 +4,6 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "vite",
-  "rootDirectory": "portfolio-website",
   "headers": [
     {
       "source": "/assets/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2)$",
