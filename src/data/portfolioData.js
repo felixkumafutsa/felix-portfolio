@@ -89,6 +89,24 @@ export const portfolioData = {
     },
     {
       id: 6,
+      title: "CryptoSpeedX - Arbitrage Intelligence",
+      description: "Advanced crypto arbitrage intelligence platform that identifies and executes profitable trading opportunities across multiple exchanges in real-time.",
+      technologies: ["Python", "React", "WebSocket", "Machine Learning", "REST APIs", "PostgreSQL"],
+      github: "https://github.com/felixkumafutsa",
+      demo: "https://felixkumafutsa.github.io",
+      image: "/api/placeholder/600/400"
+    },
+    {
+      id: 7,
+      title: "MWCrypto Pay - Payment Settlement",
+      description: "Crypto-based payment settlement system enabling seamless cross-border transactions without friction, allowing users to buy and sell goods/services globally using cryptocurrency.",
+      technologies: ["Blockchain", "Node.js", "React", "Web3.js", "Smart Contracts", "MongoDB", "Stripe API"],
+      github: "https://github.com/felixkumafutsa",
+      demo: "https://felixkumafutsa.github.io",
+      image: "/api/placeholder/600/400"
+    },
+    {
+      id: 8,
       title: "Fingerprint Attendance System",
       description: "Biometric attendance system with fingerprint recognition, real-time tracking, and analytics dashboard.",
       technologies: ["ESP32", "R503 Sensor", "REST API", "MongoDB", "React"],
