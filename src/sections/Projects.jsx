@@ -13,24 +13,17 @@ const Projects = () => {
       className="group bg-glass-gradient backdrop-blur-3xl border border-white/20 rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-300 hover:shadow-glass-lg"
     >
       <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20 overflow-hidden">
-        {project.image && !project.image.includes('/api/placeholder/') ? (
+        {project.image ? (
           <>
-            <img 
-              src={project.image} 
+            <img
+              src={project.image}
               alt={project.title}
               className="w-full h-full object-cover"
               onError={(e) => {
                 e.target.style.display = 'none';
-                e.target.nextSibling.style.display = 'flex';
               }}
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-            <div className="absolute inset-0 flex items-center justify-center" style={{display: 'none'}}>
-              <div className="text-center">
-                <div className="text-4xl mb-2">🚀</div>
-                <p className="text-white/80 text-sm">Project Showcase</p>
-              </div>
-            </div>
           </>
         ) : (
           <>

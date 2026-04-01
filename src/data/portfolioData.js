@@ -19,10 +19,14 @@ export const portfolioData = {
       { name: "React", icon: "devicon-react-original", level: 90 },
       { name: "HTML5", icon: "devicon-html5-plain", level: 95 },
       { name: "CSS3", icon: "devicon-css3-plain", level: 90 },
-      { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain", level: 85 }
+      { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain", level: 85 },
+      { name: "Angular JS", icon: "devicon-angularjs-plain", level: 80 },
+      { name: "Next.js", icon: "nextjs", level: 80 }
     ],
     backend: [
       { name: "Node.js", icon: "devicon-nodejs-plain", level: 85 },
+      { name: "Node + Express", icon: "devicon-express-original", level: 85 },
+      { name: "Nest.js", icon: "nestjs", level: 80 },
       { name: "REST APIs", icon: "api", level: 95 },
       { name: "Authentication", icon: "shield", level: 80 }
     ],
@@ -33,13 +37,31 @@ export const portfolioData = {
       { name: "SQL", icon: "database", level: 90 },
       { name: "MongoDB", icon: "devicon-mongodb-plain", level: 70 }
     ],
-    technologies: [
-      { name: "IoT Solutions", icon: "iot", level: 90 },
-      { name: "Network Administration", icon: "network", level: 85 },
-      { name: "Data Science", icon: "brain", level: 80 },
-      { name: "Cloud Computing", icon: "cloud", level: 75 },
-      { name: "Cybersecurity", icon: "security", level: 70 },
-      { name: "System Administration", icon: "server", level: 85 }
+    dataScience: [
+      { name: "Pandas", icon: "brain", level: 80 },
+      { name: "Matplotlib", icon: "brain", level: 75 },
+      { name: "OpenCV", icon: "brain", level: 70 }
+    ],
+    mobile: [
+      { name: "Java", icon: "devicon-java-plain", level: 80 },
+      { name: "Kotlin", icon: "devicon-kotlin-plain", level: 75 },
+      { name: "React Native", icon: "devicon-react-original", level: 78 },
+      { name: ".NET MAUI", icon: "dotnet", level: 70 }
+    ],
+    iot: [
+      { name: "Internet of Things", icon: "iot", level: 95 },
+      { name: "Arduino", icon: "chip", level: 88 },
+      { name: "ESP01", icon: "chip", level: 85 },
+      { name: "ESP32", icon: "chip", level: 90 },
+      { name: "ESP8266 (NodeMCU)", icon: "chip", level: 87 },
+      { name: "Raspberry Pi", icon: "chip", level: 90 },
+      { name: "Node-RED", icon: "node-red", level: 80 },
+      { name: "MQTT", icon: "mqtt", level: 80 },
+      { name: "Arduino Cloud", icon: "cloud", level: 80 }
+    ],
+    design3D: [
+      { name: "Blender", icon: "devicon-blender-plain", level: 82 },
+      { name: "FreeCAD", icon: "devicon-figma-plain", level: 77 }
     ]
   },
 
@@ -60,7 +82,7 @@ export const portfolioData = {
       technologies: ["ESP32", "RFID", "Node.js", "MariaDB", "REST API"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/portfolio-website/images/projects/medcard.png"
+      image: "/images/projects/medcard.png"
     },
     {
       id: 3,
@@ -69,7 +91,7 @@ export const portfolioData = {
       technologies: ["React", "Node.js", "PostgreSQL", "Docker", "JWT", "PDF Generation"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/portfolio-website/images/projects/auditsoft.png"
+      image: "/images/projects/auditsoft.png"
     },
     {
       id: 4,

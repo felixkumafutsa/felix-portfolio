@@ -21,7 +21,13 @@ const Skills = () => {
       'chip': '💾',
       'rfid': '📡',
       'brain': '🧠',
-      'link': '⛓️'
+      'link': '⛓️',
+      'devicon-angularjs-plain': '🅰️',
+      'nextjs': '⏭️',
+      'nestjs': '🌀',
+      'dotnet': '.NET',
+      'node-red': '🔀',
+      'mqtt': '📡'
     };
     return iconMap[iconName] || '💻';
   };
@@ -34,34 +40,21 @@ const Skills = () => {
       transition={{ duration: 0.6, delay: index * 0.1 }}
       className="bg-glass-gradient backdrop-blur-3xl border border-white/20 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 hover:shadow-glass-lg"
     >
-      <h3 className="text-xl font-semibold mb-4 text-white capitalize">{category}</h3>
-      <div className="space-y-3">
+      <h3 className="text-xl font-semibold mb-4 text-white">
+        {category === 'iot' ? 'Internet of Things' : category === 'design3D' ? '3D Design & Modeling' : category.charAt(0).toUpperCase() + category.slice(1)}
+      </h3>
+      <div className="flex flex-wrap gap-2">
         {skills.map((skill, skillIndex) => (
-          <motion.div
+          <motion.span
             key={skill.name}
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: skillIndex * 0.05 }}
-            className="space-y-2"
+            transition={{ duration: 0.35, delay: skillIndex * 0.05 }}
+            className="px-2 py-1 bg-white/10 rounded-full text-xs text-gray-300 border border-white/20"
           >
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-2">
-                <span className="text-lg">{getSkillIcon(skill.icon)}</span>
-                <span className="text-gray-300 font-medium">{skill.name}</span>
-              </div>
-              <span className="text-sm text-gray-400">{skill.level}%</span>
-            </div>
-            <div className="w-full bg-white/10 rounded-full h-2">
-              <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: `${skill.level}%` }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: skillIndex * 0.1 }}
-                className="h-2 bg-gradient-to-r from-primary to-secondary rounded-full"
-              />
-            </div>
-          </motion.div>
+            {skill.name}
+          </motion.span>
         ))}
       </div>
     </motion.div>
@@ -78,7 +71,7 @@ const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Technical Skills
+            Core Technologies & Technical Skills
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
           <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
