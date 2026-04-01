@@ -78,7 +78,7 @@ export const portfolioData = {
       technologies: ["React", "Node.js", "MongoDB", "Stripe API", "Geolocation", "SMS Integration"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/api/placeholder/600/400"
+      image: "/portfolio-website/images/projects/farmrent.png"
     },
     {
       id: 5,
@@ -87,7 +87,7 @@ export const portfolioData = {
       technologies: ["Web3", "Smart Contracts", "React", "Ethereum", "Solidity"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/api/placeholder/600/400"
+      image: "/portfolio-website/images/projects/trader.png"
     },
     {
       id: 6,
@@ -105,7 +105,7 @@ export const portfolioData = {
       technologies: ["Blockchain", "Node.js", "React", "Web3.js", "Smart Contracts", "MongoDB", "Stripe API"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/api/placeholder/600/400"
+      image: "/portfolio-website/images/projects/cryptopay.png"
     },
     {
       id: 8,
@@ -114,7 +114,7 @@ export const portfolioData = {
       technologies: ["ESP32", "Solar Sensors", "React", "Node.js", "MQTT", "InfluxDB", "Grafana", "WebSocket"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/api/placeholder/600/400"
+      image: "/portfolio-website/images/projects/solar.png"
     },
     {
       id: 9,
