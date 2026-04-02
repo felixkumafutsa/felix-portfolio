@@ -68,15 +68,6 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: "IoT Device Monitoring Platform",
-      description: "Real-time monitoring dashboard for IoT devices with data visualization, alerts, and remote management capabilities.",
-      technologies: ["React", "Node.js", "ESP32", "MQTT", "WebSocket"],
-      github: "https://github.com/felixkumafutsa",
-      demo: "https://felixkumafutsa.github.io",
-      image: "/api/placeholder/600/400"
-    },
-    {
-      id: 2,
       title: "MedCard Medical RFID System",
       description: "Secure medical identification system using RFID technology for patient tracking and medical record management.",
       technologies: ["ESP32", "RFID", "Node.js", "MariaDB", "REST API"],
@@ -85,7 +76,7 @@ export const portfolioData = {
       image: "/images/projects/medcard.png"
     },
     {
-      id: 3,
+      id: 2,
       title: "AUDITSOFT Enterprise Software",
       description: "Comprehensive enterprise auditing software for compliance management, risk assessment, and automated audit workflows with detailed reporting.",
       technologies: ["React", "Node.js", "PostgreSQL", "Docker", "JWT", "PDF Generation"],
@@ -94,76 +85,67 @@ export const portfolioData = {
       image: "/images/projects/auditsoft.png"
     },
     {
-      id: 4,
+      id: 3,
       title: "Farm Inputs Rental Platform",
       description: "Agricultural inputs management system for renting farming equipment, seeds, and fertilizers with inventory tracking and farmer verification.",
       technologies: ["React", "Node.js", "MongoDB", "Stripe API", "Geolocation", "SMS Integration"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/portfolio-website/images/projects/farmrent.png"
+      image: "/images/projects/farmrent.png"
+    },
+    {
+      id: 4,
+      title: "CryptoSpeedX - Arbitrage Intelligence",
+      description: "Advanced crypto arbitrage intelligence platform that identifies and executes profitable trading opportunities across multiple exchanges in real-time.",
+      technologies: ["Python", "React", "WebSocket", "REST APIs", "PostgreSQL"],
+      github: "https://github.com/felixkumafutsa",
+      demo: "https://felixkumafutsa.github.io",
+      image: "/images/projects/cryptospeedX.png"
     },
     {
       id: 5,
-      title: "Crypto Trading Web Platform",
-      description: "Decentralized trading platform with smart contracts, real-time charts, and automated trading strategies.",
-      technologies: ["Web3", "Smart Contracts", "React", "Ethereum", "Solidity"],
-      github: "https://github.com/felixkumafutsa",
-      demo: "https://felixkumafutsa.github.io",
-      image: "/portfolio-website/images/projects/trader.png"
-    },
-    {
-      id: 6,
-      title: "CryptoSpeedX - Arbitrage Intelligence",
-      description: "Advanced crypto arbitrage intelligence platform that identifies and executes profitable trading opportunities across multiple exchanges in real-time.",
-      technologies: ["Python", "React", "WebSocket", "Machine Learning", "REST APIs", "PostgreSQL"],
-      github: "https://github.com/felixkumafutsa",
-      demo: "https://felixkumafutsa.github.io",
-      image: "/api/placeholder/600/400"
-    },
-    {
-      id: 7,
       title: "MWCrypto Pay - Payment Settlement",
       description: "Crypto-based payment settlement system enabling seamless cross-border transactions without friction, allowing users to buy and sell goods/services globally using cryptocurrency.",
       technologies: ["Blockchain", "Node.js", "React", "Web3.js", "Smart Contracts", "MongoDB", "Stripe API"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/portfolio-website/images/projects/cryptopay.png"
+      image: "/images/projects/mwcryptopay.png"
     },
     {
-      id: 8,
+      id: 6,
       title: "Solar Power Plant Monitoring System",
       description: "Comprehensive IoT-based monitoring system for solar power plants with real-time energy production tracking, performance analytics, and predictive maintenance alerts.",
       technologies: ["ESP32", "Solar Sensors", "React", "Node.js", "MQTT", "InfluxDB", "Grafana", "WebSocket"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/portfolio-website/images/projects/solar.png"
+      image: "/images/projects/solar.png"
     },
     {
-      id: 9,
+      id: 7,
       title: "IoT SmartBin System",
       description: "Intelligent waste management system with ultrasonic sensors for fill-level detection, automated collection scheduling, and real-time dashboard for municipal authorities.",
       technologies: ["ESP32", "Ultrasonic Sensors", "LoRaWAN", "React", "MongoDB", "GPS", "SMS Gateway"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/api/placeholder/600/400"
+      image: "/images/projects/smartbin.png"
     },
     {
-      id: 10,
+      id: 8,
       title: "IoT Monitoring Gateway",
       description: "Universal IoT gateway platform enabling users to connect and monitor various IoT devices through a centralized dashboard with real-time data visualization and alert management.",
       technologies: ["Raspberry Pi", "MQTT Broker", "React", "Node.js", "WebSocket", "PostgreSQL", "Docker", "REST API"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/api/placeholder/600/400"
+      image: "/images/projects/iot monitoring gateway.png"
     },
     {
-      id: 11,
+      id: 9,
       title: "Fingerprint Attendance System",
       description: "Biometric attendance system with fingerprint recognition, real-time tracking, and analytics dashboard.",
       technologies: ["ESP32", "R503 Sensor", "REST API", "MongoDB", "React"],
       github: "https://github.com/felixkumafutsa",
       demo: "https://felixkumafutsa.github.io",
-      image: "/api/placeholder/600/400"
+      image: "/images/projects/fingerprint.png"
     }
   ],
 
